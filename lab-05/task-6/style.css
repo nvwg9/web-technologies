@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 30px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #3a2c12;
+    background-color: #4a3b1c;
+    background-image: url("../img/sunflower.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 250, 235, 0.88);
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-size: 40px;
+    color: #8a5a00;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    padding-bottom: 5px;
+    font-size: 24px;
+    color: #8a5a00;
+    border-bottom: 2px solid #e8b400;
+}
+
+section {
+    margin-top: 35px;
+}
+
+.intro p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.tags div {
+    display: inline;
+    width: 200px;
+    height: 100px;
+    padding: 4px 10px;
+    margin-right: 5px;
+    background-color: #e8b400;
+    color: #3a2c12;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.tags span {
+    display: block;
+    width: 150px;
+    margin-top: 8px;
+    padding: 6px 10px;
+    background-color: #8a5a00;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.tags span:first-of-type {
+    margin-top: 25px;
+}
+
+.repeat div {
+    height: 200px;
+    margin-bottom: 15px;
+    border: 2px solid #e8b400;
+    background-color: #fff7d6;
+    background-image: url("../img/icon.png");
+}
+
+.repeat p {
+    display: inline-block;
+    margin: 0;
+    padding: 4px 10px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #8a5a00;
+}
+
+.repeat .repeat-x { background-repeat: repeat-x; }
+.repeat .repeat-y { background-repeat: repeat-y; }
+.repeat .space    { background-repeat: space; }
+.repeat .round    { background-repeat: round; }
+
+.size figure {
+    display: inline-block;
+    margin: 0 20px 10px 0;
+    vertical-align: top;
+}
+
+.size div {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #8a5a00;
+    background-color: #fff7d6;
+    background-image: url("../img/parrot.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.size .contain { background-size: contain; }
+.size .cover   { background-size: cover; }
+
+.size figcaption {
+    margin-top: 6px;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.attachment div {
+    max-height: 150px;
+    overflow: auto;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    border: 2px solid #8a5a00;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    background-color: #4a3b1c;
+    background-image: url("../img/butterfly.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.attachment .scroll { background-attachment: scroll; }
+.attachment .local  { background-attachment: local; }
+
+.attachment h3 {
+    font-family: "Courier New", monospace;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #8a5a00;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 5. Завдання 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>box-sizing, overflow та display</h1>
+
+    <section class="box-sizing">
+        <h2>1. box-sizing</h2>
+        <div class="content-box">
+            <b>box-sizing: content-box</b><br>
+            width: 300px, padding: 20px, border: 5px.<br>
+            Загальна ширина: 300 + 2 × 20 + 2 × 5 = <b>350px</b>
+        </div>
+        <div class="border-box">
+            <b>box-sizing: border-box</b><br>
+            width: 300px, padding: 20px, border: 5px.<br>
+            Загальна ширина: <b>300px</b> (вміст: 300 − 40 − 10 = 250px)
+        </div>
+    </section>
+
+    <section class="overflow">
+        <h2>2. overflow</h2>
+        <div class="visible">
+            <b>overflow: visible</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Saepe officiis, dolor sit amet consectetur adipisicing elit. Similique ratione itaque eum deleniti, commodi aliquid quae illum voluptas laboriosam, magnam totam doloribus nostrum.
+        </div>
+        <div class="hidden">
+            <b>overflow: hidden</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Saepe officiis, dolor sit amet consectetur adipisicing elit. Similique ratione itaque eum deleniti, commodi aliquid quae illum voluptas laboriosam, magnam totam doloribus nostrum.
+        </div>
+        <div class="scroll">
+            <b>overflow: scroll</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Saepe officiis, dolor sit amet consectetur adipisicing elit. Similique ratione itaque eum deleniti, commodi aliquid quae illum voluptas laboriosam, magnam totam doloribus nostrum.
+        </div>
+        <div class="auto">
+            <b>overflow: auto</b><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Saepe officiis, dolor sit amet consectetur adipisicing elit. Similique ratione itaque eum deleniti, commodi aliquid quae illum voluptas laboriosam, magnam totam doloribus nostrum.
+        </div>
+    </section>
+
+    <section class="display">
+        <h2>3. display</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li class="hidden-item"><a href="#">Новини</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <p>У меню 5 пунктів, але пункт «Новини» приховано за допомогою <code>display: none</code>.</p>
+    </section>
+</body>
+</html>
