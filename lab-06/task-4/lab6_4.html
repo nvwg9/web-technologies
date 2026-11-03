@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 6. Завдання 4</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <nav class="topnav">
+        <ul class="topnav-list">
+            <li class="topnav-item">
+                <a class="topnav-link topnav-link--active" href="#" title="Головна"><span class="material-symbols-outlined">home</span></a>
+            </li>
+            <li class="topnav-item">
+                <a class="topnav-link" href="#" title="Пошук"><span class="material-symbols-outlined">search</span></a>
+            </li>
+            <li class="topnav-item">
+                <a class="topnav-link" href="#" title="Пошта"><span class="material-symbols-outlined">mail</span></a>
+                <ul class="topnav-sub">
+                    <li><a class="topnav-sublink" href="#">Вхідні</a></li>
+                    <li><a class="topnav-sublink" href="#">Надіслані</a></li>
+                    <li><a class="topnav-sublink" href="#">Чернетки</a></li>
+                </ul>
+            </li>
+            <li class="topnav-item">
+                <a class="topnav-link" href="#" title="Фото"><span class="material-symbols-outlined">photo_camera</span></a>
+                <ul class="topnav-sub">
+                    <li><a class="topnav-sublink" href="#">Альбоми</a></li>
+                    <li><a class="topnav-sublink" href="#">Завантажити</a></li>
+                </ul>
+            </li>
+            <li class="topnav-item">
+                <a class="topnav-link" href="#" title="Музика"><span class="material-symbols-outlined">music_note</span></a>
+            </li>
+            <li class="topnav-item topnav-item--right">
+                <a class="topnav-link" href="#" title="Профіль"><span class="material-symbols-outlined">account_circle</span></a>
+                <ul class="topnav-sub topnav-sub--right">
+                    <li><a class="topnav-sublink" href="#">Налаштування</a></li>
+                    <li><a class="topnav-sublink" href="#">Вийти</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="sidenav">
+        <ul class="sidenav-list">
+            <li class="sidenav-item">
+                <a class="sidenav-link sidenav-link--active" href="#"><span class="material-symbols-outlined">home</span>Головна</a>
+            </li>
+            <li class="sidenav-item">
+                <a class="sidenav-link" href="#"><span class="material-symbols-outlined">article</span>Про мене</a>
+                <ul class="sidenav-sub">
+                    <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Біографія</a></li>
+                    <li class="sidenav-subitem">
+                        <a class="sidenav-sublink sidenav-sublink--parent" href="#">Освіта</a>
+                        <ul class="sidenav-sub sidenav-sub--third">
+                            <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Школа</a></li>
+                            <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Університет</a></li>
+                            <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Курси</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Хобі</a></li>
+                </ul>
+            </li>
+            <li class="sidenav-item">
+                <a class="sidenav-link" href="#"><span class="material-symbols-outlined">coffee</span>Співпраця</a>
+                <ul class="sidenav-sub">
+                    <li class="sidenav-subitem">
+                        <a class="sidenav-sublink sidenav-sublink--parent" href="#">Послуги</a>
+                        <ul class="sidenav-sub sidenav-sub--third">
+                            <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Верстка</a></li>
+                            <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Дизайн</a></li>
+                        </ul>
+                    </li>
+                    <li class="sidenav-subitem"><a class="sidenav-sublink" href="#">Ціни</a></li>
+                </ul>
+            </li>
+            <li class="sidenav-item">
+                <a class="sidenav-link" href="#"><span class="material-symbols-outlined">work</span>Портфоліо</a>
+            </li>
+            <li class="sidenav-item">
+                <a class="sidenav-link" href="#"><span class="material-symbols-outlined">call</span>Контакти</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1 class="content-title">Навігаційні панелі</h1>
+        <p class="content-text">Зверху знаходиться горизонтальна панель значків, зафіксована у верхній частині сторінки. Останній пункт (профіль) вирівняний праворуч за допомогою float. Ліворуч розташована вертикальна панель на всю висоту вікна з трьома рівнями вкладеності.</p>
+
+        <nav class="stickynav">
+            <ul class="stickynav-list">
+                <li class="stickynav-item"><a class="stickynav-link stickynav-link--active" href="#">Новини</a></li>
+                <li class="stickynav-item"><a class="stickynav-link" href="#">Статті</a></li>
+                <li class="stickynav-item"><a class="stickynav-link" href="#">Відео</a></li>
+                <li class="stickynav-item"><a class="stickynav-link" href="#">Події</a></li>
+            </ul>
+        </nav>
+
+        <h2 class="content-subtitle">«Липка» панель</h2>
+        <p class="content-text">Панель вище має position: sticky. Поки сторінка прокручується, вона рухається разом із текстом, а коли доходить до верхньої панелі, прилипає під нею.</p>
+        <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+        <p class="content-text">Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+        <p class="content-text">Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+        <p class="content-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus.</p>
+        <p class="content-text">Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum.</p>
+        <p class="content-text">Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p class="content-text">Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Etiam porta sem malesuada magna mollis euismod.</p>
+        <p class="content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.</p>
+        <p class="content-text">Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    </main>
+</body>
+</html>
