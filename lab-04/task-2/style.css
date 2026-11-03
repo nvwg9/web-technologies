@@ -50,12 +50,12 @@ hr {
 }
 
 
-#recipe {
+.recipe {
     padding: 10px;
     border: 1px solid #8a8af0;
 }
 
-#advice {
+.advice {
     font-family: "Courier New", Courier, monospace;
     font-size: 17px;
     font-style: italic;

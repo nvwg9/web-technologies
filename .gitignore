@@ -1,7 +1,7 @@
 node_modules
 dist
 logs
-*.log
+*.lo
 __MACOSX
 .Saved/
 _arc/
