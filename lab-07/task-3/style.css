@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --font-main: "Roboto", Arial, Helvetica, sans-serif;
+    --color-bg: #ffffff;
+    --color-text: #444444;
+    --color-text-light: #8a8a8a;
+    --color-line: #cfcfcf;
+    --space: 16px;
+    --icon-size: 64px;
+}
+
+body {
+    font-family: var(--font-main);
+    font-weight: 400;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space);
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--space);
+    border-bottom: 1px solid var(--color-line);
+}
+
+.current__city {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.current__date,
+.current__state {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--color-text-light);
+}
+
+.current__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+    margin-top: 10px;
+}
+
+.current__now {
+    display: flex;
+    align-items: center;
+    gap: var(--space);
+}
+
+.current__icon {
+    width: 80px;
+}
+
+.current__temp {
+    display: flex;
+    align-items: flex-start;
+    font-size: 52px;
+    font-weight: 300;
+}
+
+.current__unit {
+    margin-left: 6px;
+    font-size: 18px;
+    color: var(--color-text-light);
+}
+
+.current__details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 15px;
+    color: var(--color-text-light);
+}
+
+.current__details span {
+    color: var(--color-text);
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 100px;
+    border-bottom: 1px solid var(--color-line);
+}
+
+.day__name {
+    flex: 0 0 30%;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.day__icon {
+    flex: 0 0 auto;
+    width: var(--icon-size);
+}
+
+.day__temp {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    font-size: 17px;
+}
+
+.day__low {
+    color: var(--color-text-light);
+}
+
+.day__pollen {
+    display: none;
+    font-size: 17px;
+    color: var(--color-text-light);
+}
+
+.day__pollen span {
+    color: var(--color-text);
+}
+
+@media (min-width: 600px) {
+    :root {
+        --space: 24px;
+        --icon-size: 80px;
+    }
+
+    .current__city {
+        font-size: 64px;
+    }
+
+    .current__body {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .current__now,
+    .current__details {
+        flex: 1 1 50%;
+    }
+
+    .current__temp {
+        font-size: 64px;
+    }
+
+    .current__icon {
+        width: 120px;
+    }
+
+    .day {
+        min-height: 140px;
+    }
+
+    .day > * {
+        flex: 1 1 25%;
+    }
+
+    .day__name,
+    .day__temp,
+    .day__pollen {
+        font-size: 20px;
+    }
+
+    .day__icon {
+        width: auto;
+        height: var(--icon-size);
+        object-fit: contain;
+        object-position: left center;
+    }
+
+    .day__pollen {
+        display: block;
+    }
+}
