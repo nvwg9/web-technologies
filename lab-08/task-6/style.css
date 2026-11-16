@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-main: "Times New Roman", Times, serif;
+    --color-bg: #ffffff;
+    --color-block: #fdd942;
+    --color-text: #ffffff;
+    --gap: 10px;
+    --columns: 6;
+    --rows: 12;
+    --row-height: 48px;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 22px;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+.tree {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: repeat(var(--rows), var(--row-height));
+    grid-auto-flow: column;
+    gap: var(--gap);
+    padding: var(--gap);
+    counter-reset: block;
+}
+
+.tree__block {
+    padding-top: 12px;
+    text-align: center;
+    background-color: var(--color-block);
+    counter-increment: block;
+}
+
+.tree__block::before {
+    content: counter(block);
+}
+
+.tree__block--l1 {
+    grid-row: span 12;
+}
+
+.tree__block--l2 {
+    grid-row: span 6;
+}
+
+.tree__block--l3 {
+    grid-row: span 4;
+}
+
+.tree__block--l4 {
+    grid-row: span 3;
+}
+
+.tree__block--l6 {
+    grid-row: span 2;
+}
+
+.tree__block--l12 {
+    grid-row: span 1;
+}
+
+@media (max-width: 768px) {
+    :root {
+        --gap: 6px;
+        --row-height: 40px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --gap: 4px;
+        --row-height: 32px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .tree__block {
+        padding-top: 6px;
+    }
+}
